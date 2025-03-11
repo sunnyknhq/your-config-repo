@@ -1,1 +1,18 @@
-hi
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/CTD_JAN
+    username: postgres
+    password: pgAdmin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0  # 100% of requests will be traced
+
+
